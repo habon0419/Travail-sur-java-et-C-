@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gestion_commercialeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'gestion_commerciale.dbo.client' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="telephone" Type="varchar" MaxLength="255" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="Commande_id" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'gestion_commerciale.dbo.personne' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="personne">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nom" Type="varchar" MaxLength="255" />
+    <Property Name="prenom" Type="varchar" MaxLength="255" />
+    <Property Name="telephone" Type="varchar" MaxLength="255" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="Commande_id" Type="int" />
+    <Property Name="login" Type="varchar" MaxLength="255" />
+    <Property Name="pwd" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <!--Erreurs détectées durant la génération :
+avertissement 6002: La table/vue 'gestion_commerciale.dbo.user' n'a pas de clé primaire définie. La clé a été déduite et la définition a été créée en tant que table/vue en lecture seule.-->
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="login" />
+      <PropertyRef Name="pwd" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="login" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="pwd" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="gestion_commercialeModelStoreContainer">
+    <EntitySet Name="client" EntityType="Self.client" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [client].[id] AS [id], 
+    [client].[telephone] AS [telephone], 
+    [client].[address] AS [address], 
+    [client].[Commande_id] AS [Commande_id]
+    FROM [dbo].[client] AS [client]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="personne" EntityType="Self.personne" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [personne].[id] AS [id], 
+    [personne].[nom] AS [nom], 
+    [personne].[prenom] AS [prenom], 
+    [personne].[telephone] AS [telephone], 
+    [personne].[address] AS [address], 
+    [personne].[Commande_id] AS [Commande_id], 
+    [personne].[login] AS [login], 
+    [personne].[pwd] AS [pwd]
+    FROM [dbo].[personne] AS [personne]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="user" EntityType="Self.user" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [user].[id] AS [id], 
+    [user].[login] AS [login], 
+    [user].[pwd] AS [pwd]
+    FROM [dbo].[user] AS [user]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

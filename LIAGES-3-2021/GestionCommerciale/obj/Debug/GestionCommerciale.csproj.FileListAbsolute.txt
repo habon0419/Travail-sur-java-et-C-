@@ -1,0 +1,14 @@
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\bin\Debug\GestionCommerciale.exe.config
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\bin\Debug\GestionCommerciale.exe
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\bin\Debug\GestionCommerciale.pdb
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\bin\Debug\EntityFramework.dll
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\bin\Debug\EntityFramework.xml
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\obj\Debug\GestionCommerciale.csprojAssemblyReference.cache
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\obj\Debug\GestionCommerciale.Properties.Resources.resources
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\obj\Debug\GestionCommerciale.csproj.GenerateResource.cache
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\obj\Debug\GestionCommerciale.csproj.CoreCompileInputs.cache
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\obj\Debug\GestionCommerciale.csproj.CopyComplete
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\obj\Debug\GestionCommerciale.exe
+C:\Users\habon\source\repos\LIAGES-3-2021\GestionCommerciale\obj\Debug\GestionCommerciale.pdb

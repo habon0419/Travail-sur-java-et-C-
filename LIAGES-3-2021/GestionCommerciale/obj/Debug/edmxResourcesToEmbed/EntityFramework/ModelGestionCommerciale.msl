@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gestion_commercialeModelStoreContainer" CdmEntityContainer="gestion_commercialeEntities">
+    <EntitySetMapping Name="client">
+      <EntityTypeMapping TypeName="gestion_commercialeModel.client">
+        <MappingFragment StoreEntitySet="client">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="Commande_id" ColumnName="Commande_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="personne">
+      <EntityTypeMapping TypeName="gestion_commercialeModel.personne">
+        <MappingFragment StoreEntitySet="personne">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nom" ColumnName="nom" />
+          <ScalarProperty Name="prenom" ColumnName="prenom" />
+          <ScalarProperty Name="telephone" ColumnName="telephone" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="Commande_id" ColumnName="Commande_id" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="gestion_commercialeModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
